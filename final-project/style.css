@@ -1,0 +1,155 @@
+/* BASE RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    background-color: #0a0a0a;
+    color: #d4d4d4;
+    font-family: 'Georgia', 'Times New Roman', serif;
+    line-height: 1.6;
+}
+
+/* LAYOUT */
+.container {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 4rem 2rem 6rem;
+}
+
+/* HEADLINE */
+h1 {
+    font-size: 2.8rem;
+    line-height: 1.15;
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+/* DECK/SUBTITLE */
+.deck {
+    font-size: 1.25rem;
+    line-height: 1.5;
+    color: #b8b8b8;
+    margin-bottom: 3rem;
+    font-style: italic;
+    border-bottom: 1px solid #2a2a2a;
+    padding-bottom: 2rem;
+}
+
+/* BODY TEXT */
+p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin: 1.5rem 0;
+    color: #d4d4d4;
+}
+
+/* IMAGES */
+.image-block {
+    margin: 3rem 0;
+    background-color: #151515;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 2px;
+}
+
+.caption {
+    font-size: 0.85rem;
+    color: #888;
+    margin-top: 0.75rem;
+    font-style: italic;
+    line-height: 1.5;
+}
+
+/* PULL QUOTE - FIRST ONE BRIGHT RED */
+.pull-quote {
+    border-left: 5px solid #ff1744;
+    padding-left: 1.5rem;
+    margin: 3rem 0;
+    background-color: rgba(255, 23, 68, 0.05);
+    padding: 1.5rem 1.5rem 1.5rem 2rem;
+    border-radius: 0 4px 4px 0;
+}
+
+.pull-quote p {
+    font-size: 1.75rem;
+    line-height: 1.35;
+    font-weight: 700;
+    color: #ff1744;
+    margin: 0;
+    font-style: italic;
+}
+
+/* ADDITIONAL QUOTES - DIFFERENT STYLING */
+.pull-quote.secondary {
+    border-left-color: #666;
+    background-color: rgba(255, 255, 255, 0.03);
+}
+
+.pull-quote.secondary p {
+    color: #999;
+    font-size: 1.5rem;
+}
+
+/* MAP */
+.map-container {
+    margin: 3.5rem 0;
+    background-color: #151515;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 500px;
+    border: none;
+    border-radius: 2px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        padding: 2rem 1.25rem 4rem;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .deck {
+        font-size: 1.1rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    .pull-quote p {
+        font-size: 1.4rem;
+    }
+
+    .map-container iframe {
+        height: 350px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.75rem;
+    }
+
+    .pull-quote p {
+        font-size: 1.25rem;
+    }
+}
